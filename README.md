@@ -1,6 +1,6 @@
 # Thiet_Ke_WEB 🥸
 
-HTML online [click](https://codebeautify.org/real-time-html-editor#)
+HTML online [ctrl+click](https://codebeautify.org/real-time-html-editor#)
 
 
 khi nao moi lam dc web tai xiu ?
