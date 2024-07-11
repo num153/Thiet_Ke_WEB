@@ -1,0 +1,51 @@
+header{
+    background-image:url(https://png.pngtree.com/thumb_back/fh260/background/20210807/pngtree-wallpaper-abstract-glowing-stars-watercolor-light-blue-background-image_758548.jpg);
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ads > div{
+    border: 1px dashed blue;
+    margin: 2px ;
+    width: 200px;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+}
+
+header input{
+    padding: 5px;
+}
+.left{
+    width: 30%;
+    background-color: brown;
+}
+.right{
+    width: 70%;
+    background-color: aqua;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(white,rgb(169, 218, 255));
+}
+ul.menu > li{
+    border-left: 1px solid white;
+    flex-direction: column;
+}
+ul.menu > li > a{
+    color: darkblue;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+}
+
+ul.menu > li > a:hover{
+    background-color: darkblue;
+    color: white;
+}
