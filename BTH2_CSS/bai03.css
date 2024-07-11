@@ -1,0 +1,82 @@
+.menu{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: #E8E8E8;
+}
+ul.menu > li{
+    border-left: 1px solid white;
+}
+ul.menu > li > a{
+    color: darkblue;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+}
+ul.menu > li:last-child{
+    margin-left: auto;
+}
+ul.menu > li > a:hover{
+    background-color: darkblue;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+.langs{
+    margin-top: 10px;
+    background-color: rgb(208, 208, 208);
+    margin-bottom: 10px;
+}
+.lang{
+    overflow: hidden;
+    border-bottom: 1px solid whitesmoke;
+}
+.lang img{
+    width: 120px;
+    float: left;
+    padding: 10px;
+}
+.lang img:last-child{
+    border-bottom: none;
+}
+.lang img:hover{
+    transform: rotate(30deg);
+}
+@keyframes move{
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}
+footer{
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+    overflow: hidden;
+}
+footer > p > span{
+    position: relative;
+    animation: move 10s linear infinite;
+}
+.sub{
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    /* display: none !important; */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
+}
+.sub:hover .submenu{
+    /* display: block !important; */
+    opacity: 1;
+    visibility: visible;
+}
+.menu.submenu{
+    flex-direction: column !important;
+}
