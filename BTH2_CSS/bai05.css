@@ -1,0 +1,126 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-color: lightblue;
+}
+.navbar > ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.navbar > ul > li{
+    border-right: 1px solid white;
+    min-width: 120px;
+    text-align: center;
+}
+.navbar > ul > li > a{
+    text-decoration: none;
+    color: darkblue;
+    display: block;
+    padding: 15px 8px;
+}
+ul.leftNav >li:last-child{
+    border-right: none;
+}
+.navbar > ul > li > a:hover{
+    background-color: darkblue;
+    color: aliceblue;
+}
+.leftNav{
+    float: left;
+}
+.rightNav{
+    float: right;
+}
+.clearFix{
+    overflow: hidden;
+}
+.banner{
+    background:linear-gradient(darkblue,rgb(156, 182, 255));
+    display: flex;
+}
+.banner h1{
+    font-size: 36px;
+    color: aliceblue;
+    text-shadow: 2px 3px blue;
+    position: relative;
+    left: 20%;
+}
+section.content{
+    width: 70%;
+    margin: 5px auto;
+}
+div.subject > h1{
+    color: aliceblue;
+    background-color: darkblue;
+    padding: 10px;
+    margin:0;
+    margin-top: 10px;
+}
+div.post{
+    display: flex;
+    background-color: lightblue;
+    border-bottom: 1px solid white;
+}
+div.subject h1{
+    border-radius: 10px 10px 0px 0px;
+}
+.col1{
+    width: 10%;
+}
+.col2{
+    width: 40%;
+}
+.col3{
+    width: 20%;
+}
+.col4{
+    width: 30%;
+    direction: rtl;
+}
+.col{
+    padding: 10px;
+}
+.col > ul,p,li{
+    list-style: none;
+    margin: 0;
+}
+.col > a{
+    text-decoration: none;
+}
+.col > img{
+    width: 100%;
+}
+section.ads > div{
+    position: fixed;
+    background: linear-gradient(rgb(119, 119, 255),darkblue);
+    width: 15%;
+    display: flex;
+}
+div.adLeft{
+    left:0;
+}
+div.adRight{
+    right:0;
+}
+/* xu ly tooltip */
+.tooltipContent{
+    background-color: rgb(135, 212, 212);
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    margin-left: -100px;
+    padding: 15px;
+}
+.tooltipUser:hover .tooltipContent{ 
+    /* khi hover thang cha thi thang con ben trong moi hien ra */
+    display: block;
+}
+.tooltipContent > ul{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
