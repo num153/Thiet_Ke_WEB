@@ -1,25 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Add to Cart</title>
+    <title>Rock Paper Scissor</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <p>Rock Paper Scissor Game</p>
     
     <button onclick="
-      const rand = Math.random();
-      // compuer can use in scope-if; var does not follow the rule of scope
-      let computer='';
-      if(rand >=0 && rand <1/3){
-        computer = 'rock';
-      }else if(rand >=1/3 && rand <2/3){
-        computer = 'paper';
-      }else{
-        computer = 'scissor';
-      }
-    console.log(computer);
-    
+      computerPick();
     let result='';
     if(computer === 'rock'){
       result = 'Ties';
@@ -38,8 +27,21 @@
     
     
   <script>
-    true
-    false
+  //move compuer var outside cuz scope-function, now it become global-var
+        let computer='';
+    function computerPick(){
+      const rand = Math.random();
+      // compuer can use in scope-if; var does not follow the rule of scope
+      if(rand >=0 && rand <1/3){
+        computer = 'rock';
+      }else if(rand >=1/3 && rand <2/3){
+        computer = 'paper';
+      }else{
+        computer = 'scissor';
+      }
+    console.log(computer);
+      
+    }
     
     
   </script>
