@@ -1,0 +1,33 @@
+//Include JS 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add to Cart</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <button onclick="
+  console.log(`Cart Quantity: ${cartQuatiy} `);
+  ">Show Quantity</button>
+  <button onclick="cartQuatiy++; 
+  console.log(`Cart Quatity: ${cartQuatiy}`);
+  ">Add to cart</button>
+  <button onclick="
+  cartQuatiy+=2;
+  console.log(`Cart Quatity: ${cartQuatiy}`);
+  ">+2</button>
+  <button onclick="
+  cartQuatiy+=3;
+  console.log(`Cart Quatity: ${cartQuatiy}`);
+  ">+3</button>
+  <button onclick="
+  cartQuatiy=0;
+  console.log('Cart was reset to zero');
+  ">Reset Cart</button>
+  
+  <script>
+    let cartQuatiy=0;
+    
+  </script>
+  </body>
+</html>
