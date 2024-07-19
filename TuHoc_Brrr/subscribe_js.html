@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .sub-button{
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+      <h1 style="color: white">Subscribe Button</h1>
+      <button class="sub-button" onclick="sub_function()">Subscribe</button>
+      <script>
+      
+      function sub_function(){
+        const click=document.querySelector('.sub-button');
+        if(click.innerText === 'Subscribe' ){
+          click.innerHTML = 'Subscribed';
+          click.style.backgroundColor = 'blue';
+          
+        }else{
+          click.innerHTML = 'Subscribe';
+          click.style.backgroundColor = 'red';
+        }
+        
+      }
+      
+      </script>
+  </body>
+</html>
