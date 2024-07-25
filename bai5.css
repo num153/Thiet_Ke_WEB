@@ -1,0 +1,121 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --p:10px;
+}
+.navbar > ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color:lightblue ;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.clearfix{
+    overflow: hidden;
+}
+.navbar > ul > li{
+    text-align: center;
+    border-right: 1px solid whitesmoke;
+}
+.navbar > ul > li > a{
+    padding: 15px;
+    display: block;
+    color: darkblue;
+    text-decoration: none;
+}
+.navbar > ul > li:last-child{
+    border-right: none;
+}
+.navbar > ul > li > a:hover{
+    background-color: blue;
+    color: aliceblue;
+}
+.submenu{
+    display: block;
+}
+/* KHU VUC BANNDER */
+section.banner{
+    background:linear-gradient(blue,rgb(129, 191, 241));
+    display: flex;
+}
+.banner h2{
+    color: aliceblue;
+    position: relative;
+    left: 20%;
+    font-size: 35px;
+    text-shadow: 2px 5px blue;
+}
+/* KHU VUC LH ADS */
+aside.ads > div {
+    background: linear-gradient(blue,rgb(101, 183, 255));
+    color: aliceblue;
+    width: 14%;
+    text-align: center;
+    padding: 10rem 0;
+    position: fixed;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.ads > div:first-child{
+    left: 0.5%;
+}
+.ads > div:last-child{
+    right: 0.5%;
+}
+/* KHU VUC FOOTER */
+footer{
+    background-color: #0a6fa3;
+    position: relative;
+}
+footer > img{
+    position: absolute;
+    right: 0;
+}
+footer ul{
+    list-style: none;
+    color: aliceblue;
+    padding: 5px;
+}
+/* CONTENT */
+section.content{
+    width: 70%;
+    margin: 0 auto;
+}
+div.subject{
+    border-radius: 10px;
+    background-color: lightblue;
+    margin-bottom: 1px;
+}
+div.subject-content{
+    padding: var(--p);
+    border-bottom: 1px solid white;
+}
+.subject > h1{
+    color: aliceblue;
+    background-color: blue;
+    margin-bottom: 0;
+    padding: var(--p);
+    border-radius: 5px;
+}
+.col4{
+    direction: rtl;
+}
+.col1{
+    width: 120px;
+    background-color: rgb(175, 190, 255);
+    border-radius: 50%;
+}
